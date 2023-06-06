@@ -1,0 +1,233 @@
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff9100a2, #96d9d6, #ffd000, #6f00ffa8);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+
+.cartao-itens:hover {
+    background-color: #96d9d6;
+    border: 2px solid #000000;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+
+.cartao-itens:hover .gif {
+    background-color: #96d9d6;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+main .cartao-itens:hover .infos {
+    background: linear-gradient(90deg, #ff9100a2, #96d9d6, #ffd000, #6f00ffa8);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+main .cartao-itens:hover .desc,
+main .cartao-itens:hover .classes {
+    transform: scale (1.05);
+    color: black;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+}
+
+main .cartao-itens:hover .infos {
+    transform: scale (1.05);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    border: 1px solid;
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+main .cartao-itens .infos span {
+    padding: 5px;
+}
+
+main .cartao-itens .gif {
+    width: 95px;
+    height: 95px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #9b9b9b;
+    color: #333333;
+}
+
+main .desc {
+    font-size: 15px;
+    overflow-y: scroll;
+    max-height: 90px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.modo-escuro,
+.modo-escuro header {
+    background-color: #212121;
+    color: #f5f5f5
+}
+
+.modo-escuro .cartao-itens:hover {
+    border: 2px solid #f5f5f5;
+    transition: 0.3s ease-in-out;
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-itens,
+.modo-escuro .cartao-itens .gif {
+    background-color: #888888;
+}
+
+.modo-escuro .cartao-itens .gif :hover,
+.modo-escuro .cartao-itens:hover .gif {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-itens:hover .desc,
+.modo-escuro .cartao-itens:hover .classes {
+    color: #000000;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+}
+
+.modo-escuro .cartao-itens:hover .infos {
+    color: #000000;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    border: 1px solid black;
+}
+
+header .logo,
+header .img-botao {
+    width: 40px;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+main {
+    padding: 30px;
+}
+
+main .listagem-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-itens {
+    width: 220px;
+    padding: 20px;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    border: 1px solid #575757;
+}
+
+main .cartao-itens .classes {
+    display: flex;
+    gap: 20px;
+}
+
+main .cartao-itens .classe {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.vegetal {
+    background-color: #7ac74c;
+}
+
+.cartao-itens:hover .vegetal {
+    box-shadow: 0.5px 0.5px 10px 0.5px #5eff00;
+
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.cartao-itens:hover .veneno {
+    box-shadow: 0.5px 0.5px 10px 0.5px #ff00fbfb;
+    transition: 0.2s ease-in-out;
+}
+
+.fogo {
+    background-color: #ee3030;
+}
+
+.cartao-itens:hover .fogo {
+    box-shadow: 0.5px 0.5px 10px 0.5px #ff0000;
+    transition: 0.2s ease-in-out;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.cartao-itens:hover .agua {
+    box-shadow: 0.5px 0.5px 10px 0.5px #0051ff;
+    transition: 0.2s ease-in-out;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.cartao-itens:hover .inseto {
+    box-shadow: 0.5px 0.5px 10px 0.5px #e1ff00;
+    transition: 0.2s ease-in-out;
+}
