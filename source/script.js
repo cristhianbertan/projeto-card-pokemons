@@ -10,11 +10,11 @@ botaoAlterarTema.addEventListener("click", () => {
 
     if (modoEscuroAtivo) {
 
-        imgBotaoTrocaDeTema.setAttribute("src", "/source/imagens/sun.png");
+        imgBotaoTrocaDeTema.setAttribute("src", "./source/imagens/sun.png");
 
     } else {
 
-        imgBotaoTrocaDeTema.setAttribute("src", "/source/imagens/moon.png");
+        imgBotaoTrocaDeTema.setAttribute("src", "./source/imagens/moon.png");
     }
 
     //Salvar ou remover o modo escuro
